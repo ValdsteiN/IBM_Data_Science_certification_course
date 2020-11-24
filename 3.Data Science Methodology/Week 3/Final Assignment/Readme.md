@@ -1,27 +1,36 @@
 # Data Science Methodology. Final Assignment. Chosen topic: Emails
 
-### Q1. Which topic did you choose to apply the data science methodology to? 2 marks)
+In this Assignment, you will demonstrate your understanding of the data science methodology by applying it to a given problem. Pick one of the following topics to apply the data science methodology to:
 
-**Ans:**
-The topic that I have chosen to apply data science methodology to is **Emails**. I believe by automatically classifying emails, productivity can be increased drastically.
+- **Emails**
+- Hospitals
+- Credit Cards
 
+You will have to play the role of the client as well as the data scientist to come up with a problem that is more specific but related to these topics.
 
-Next, you will play the role of the client and the data scientist.
+### Question 1. Which topic did you choose to apply the data science methodology to?
 
-### Q2. Using the topic that you selected, complete the Business Understanding stage by coming up with a problem that you would like to solve and phrasing it in the form of a question that you will use data to answer. **(3 marks)**
+**Answer:**
+The chosen topic was Emails.
 
-You are required to:
+### Question 2. Next, you will play the role of the client and the data scientist. Using the topic that you selected, complete the Business Understanding stage by coming up with a problem that you would like to solve and phrasing it in the form of a question that you will use data to answer.
 
-Describe the problem, related to the topic you selected.
+*You are required to:*
+
+*Describe the problem, related to the topic you selected.
 Phrase the problem as a question to be answered using data.
-For example, using the food recipes use case discussed in the labs, the question that we defined was, "Can we automatically determine the cuisine of a given dish based on its ingredients?".
+For example, using the food recipes use case discussed in the labs, the question that we defined was, "Can we automatically determine the cuisine of a given dish based on its ingredients?".*
 
-**Ans:**
-Daily, we receive 100's of emails every day and it may not be possible to look at all of them. We can determine which emails are worth taking a second look by organizing them into various categories like Promotions, Updates, Social, Order Receipts, Important/Not Important, Spam etc. 
+**Answer:**
+Let's say the client is a corporate entity and they have big problems with email spam. Apparently, the standard filters are not sufficient, and the email buffer overflows quickly, preventing the real important emails from being received. The client then asks a data scientist to collaborate with an IT department to solve this problem.
 
-Our Question would be: "Is it possible to automatically determine the type/category of email based on the content of the email?"
+And here we are! Now the first step is to understand the problem - Business Understanding. After performing this step, we realise that the company gets a lot of promotional spam and fishing emails that are aimed to gain remote access to company servers or steal corporate data. The standard filters are not sufficient and, therefore, we need to train a new smart spam-filter which would be able to sort this whole mess.
 
-### Q3. Briefly explain how you would complete each of the following stages for the problem that you described in the Business Understanding stage, so that you are ultimately able to answer the question that you came up with. **(5 marks):**
+As a result, we get a problem: a lot of spam.
+
+And we can derive a question to work on: how to detect whether an email is a spam or not automatically?
+
+### Question 3. Briefly explain how you would complete each of the following stages for the problem that you described in the Business Understanding stage, so that you are ultimately able to answer the question that you came up with.
 
 1. Analytic Approach
 2. Data Requirements
@@ -29,26 +38,38 @@ Our Question would be: "Is it possible to automatically determine the type/categ
 4. Data Understanding and Preparation
 5. Modeling and Evaluation
 
-You can always refer to the labs as a reference with describing how you would complete each stage for your problem.
+*You can always refer to the labs as a reference with describing how you would complete each stage for your problem.*
 
-**Ans:**
+**Answer:**
 
 1. **Analytic Approach:**
 
-A Yes/No answer can be applied to this problem so we can use a classification model.
+Basically, we know that for us emails can be in either of two conditions: spam or non-spam — a simple binary situation. From what we have learned during this course, such problems are handled with the classification models. Such a model will then decide if the emails are spam. So at this stage, we determine that we need to classify each incoming email. 
 
 2. **Data Requirements:**
 
-To create the model, we will require information regarding the sender including email address, domain, subject, language ,if the email has an attachment or not, and body of the email to see if it contains a list (presence of a list could help classify the email as an order).
+There no other factors crucial to our approach that could be found outside of emails. Therefore, for this stage, we need all the email the company received during some time, both spam and non-spam ones. Emails on their own will give us the necessary information.
 
 3. **Data Collection:**
 
-We can gather all these data from email accounts from various email inboxes (Gmail, Hotmail, yahoo, outlook etc.). We can further merge the emails from the various inboxes to create a good dataset. Descriptive statistics & visualizations can be applied to the data set to assess the content quality and if we have the required information.
+Luckily, the company's IT team is helping us in this, and we have signed a lot of papers on non-disclosure of corporate info. So, this way, we get access to all the emails within the company. However, as we do not know the relationship between spam and non-spam emails, we also need to collect some emails that belong to both categories from other sources: internet, friends, other companies. This step has to be taken with care if the company work in a niche industry and, as a result, the emails would be particular and introduce bias to our data. Naturally, the data we get might vary in structure.
 
 4. **Data Understanding and Preparation:**
 
-We should remove the redundant data from our dataset. This could be two copies of the same email sent to different inboxes. Since we are working with text, we need to perform text analysis. We should ensure proper groupings to help classify the emails properly. These groupings should be done based on certain keywords present in the subject or content of the email.
+**Data Understanding.**
+Well, at this stage, we do our best to understand the content of our data, assess its quality. We can also make a few plots and/or graphs to get a better understanding of how the values are distributed and some first take-aways. Also, we would see if additional data is needed for a better sample or to fill the gaps. Regarding emails, we could see some basic patterns and words which characterize them as spam.
+
+**Data Preparation.**
+We need to prepare and clean our data from duplicates, missing values, similar parameters/patterns. We also see which email tags/words/parameters are important to us, and we try to merge the data in a single data frame which have all the crucial and clean parameters. Eventually, this data frame will provide us with the model. 
 
 5. **Modeling and Evaluation:**
 
-We create the classification model. We evaluate the results of the model and see how much is classified correctly or incorrectly. Using this feedback we can tweak the model to add parameters and perform necessary changes to ensure that we're getting the intended results. 
+**Modeling.**
+This stage is performed via various modelling tools and programming libraries. IBM Watson Modeller can also be used. With these tools, we try a variety of algorithms and pick the most accurate and suitable one.
+
+**Evaluation.**
+Then we need to see if our model works and sorts the emails into spam and non-spam correctly. We split the data into two sets: training and test. Then we use a training set to build the model, and after that, we test it on our training set of emails to see if it works fine and predicts correctly. We would do a lot of visualisation at this stage to get readable outputs.
+
+The modelling and evaluation steps are very iterative and can be repeated multiple times until the desired outcome is reached. 
+
+Finally, hopefully, in the end, we can provide the company with our model for a spam-filter, and they would be able to solve most of their problems.

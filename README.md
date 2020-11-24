@@ -47,10 +47,10 @@ Read more below:
 |:----:|:---------------------------------------------------------------------------|
 | 1.   | [What is Data Science?](https://github.com/ValdsteiN/IBM_Data_Science_certification_course/tree/main/What%20is%20Data%20Science) 							|
 | 2.   | [Tools for Data Science](Tools%20for%20Data%20Science)							|
-| 3.   | [Data Science Methodology](3.Data_Science_Methodology) 					|
-| 4.   | [Python for Data Science and AI](4.Python_for_Data_Science_and_AI)     	|
-| 5.   | [Databases and SQL for Data Science](5.Databases_and_SQL_for_Data_Science) |
-| 6.   | [Data Analysis with Python](6.Data_Analysis_with_Python)          			|
-| 7.   | [Data Visualization with Python](7.Data_Visualization_with_Python)    		|
-| 8.   | [Machine Learning with Python](8.Machine_Learning_with_Python)       		|
-| 9.   | [Applied Data Science Capstone](9.Applied_Data_Science_Capstone)      		|
+| 3.   | [Data Science Methodology](Data%20Science%20Methodology) 					|
+| 4.   | [Python for Data Science and AI](Python%20for%20Data%20Science%20and%20AI)     	|
+| 5.   | [Databases and SQL for Data Science](Databases%20and%20SQL%20for%20Data%20Science) |
+| 6.   | [Data Analysis with Python](Data%20Analysis%20with%20Python)          			|
+| 7.   | [Data Visualization with Python](Data%20Visualization%20with%20Python)    		|
+| 8.   | [Machine Learning with Python](Machine%20Learning%20with%20Python)       		|
+| 9.   | [Applied Data Science Capstone](Applied%20Data%20Science%20Capstone)      		|

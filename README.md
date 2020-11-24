@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
- <img src="https://raw.githubusercontent.com/ValdsteiN/IBM_Data_Science_certification_course/main/IBM.png" title="Coursera IBM" alt = "Coursera IBM" />
+ <img src="IBM.png" title="Coursera IBM" alt = "Coursera IBM" />
 </p>
 
 ## About this Professional Certificate

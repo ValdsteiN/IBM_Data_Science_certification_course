@@ -19,4 +19,4 @@ Now, start a Jupyter Notebook using any platform that you are comfortable with a
 
 Push the Notebook to your Github repository and submit a link to the notebook on your Github repository.
 
-**Link to the notebook**:
+[Vlad's Notebook](https://github.com/ValdsteiN/IBM_Data_Science_certification_course/blob/main/9.Applied%20Data%20Science%20Capstone/Week%201%20-%20Introduction%20to%20Capstone%20Project/Coursera_Capstone.ipynb)

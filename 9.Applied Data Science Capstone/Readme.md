@@ -38,3 +38,9 @@ If you choose to take this course and earn the Coursera course certificate, you 
 ### Week 4 - Capstone Project
 
 ### Week 5 - Capstone Project (Cont'd)
+
+**My work**
+
+- [**Notebook**](https://github.com/ValdsteiN/IBM_Data_Science_certification_course/blob/main/9.Applied%20Data%20Science%20Capstone/Week%205%20-%20The%20Battle%20of%20Neighborhoods%20Pt.2/Capstone%20Project%20Final.ipynb)
+- [**Report**](https://github.com/ValdsteiN/IBM_Data_Science_certification_course/blob/main/9.Applied%20Data%20Science%20Capstone/Week%205%20-%20The%20Battle%20of%20Neighborhoods%20Pt.2/IBM%20Capstone%20Project%20Report%20Complete.pdf)
+- [**Blog**](https://www.linkedin.com/pulse/ibm-data-science-capstone-project-hunger-games-vladyslav-borysenko)
